@@ -119,7 +119,7 @@ header .hamburguesa{
 }
 
 .hero > div h1{
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: 'Handlee', cursive; 
 }
 
@@ -151,6 +151,93 @@ header .hamburguesa{
     font-size: 1.5em; 
 }
 
+/* Fin hero */
+
+/* Comienzo main */
+
+section{
+    padding: 50px 0;
+}
+
+main section h2{
+    color: black;
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    font-size:2em;
+}
+
+main section h2 span{
+    color: #fa573a;
+}
+
+main section .underline{
+    position: relative;
+    width: 9.375em;
+    margin: 0 auto;
+    color: #fa573a;
+}
+
+main section .underline hr{
+    border-color: #fa573a;
+}
+
+main section .underline span{
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    top: -7px;
+    left: 71px;
+}
+
+main section .flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+main section .flex article{
+    width: 33%;
+    border-left: 1px solid #ddd;
+    padding: 0 25px;
+}
+
+main #ourservices article .icon{
+    color: #fa573a;
+    border: 2px solid #fa573a;
+    padding: 10px;
+    font-size: 120%;
+}
+
+main #ourservices article h3{
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 120%;
+}
+
+main #ourservices article p{
+    color: #aaa;
+}
+
+.fa-truck-moving {
+    transform: rotateY(180deg);
+}
+
+main .enlace{
+    color: #fa573a;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    display: inline-block;
+    
+}
+
+main .enlace i{
+    transition: .5s;
+}
+
+main .enlace:hover i{
+    transform: translateX(10px);
+    /*margin-left: 5px;*/
+}
 
 /******* media queries ******/
 
@@ -166,6 +253,21 @@ header .hamburguesa{
     div.container-fluid .submenu .row div a span {
         font-size: 70%;
     }
+
+    main section .flex article{
+        width: 50%;
+        margin-bottom: 20px;
+       
+    }
+
+    main section .flex article:last-child{
+        width: 100%;
+    }
+
+    main section .flex article:first-child,
+    main section .flex article:last-child{
+        border-left: 0;  
+    }
    
 }
 
@@ -179,10 +281,6 @@ header .hamburguesa{
         text-align: center;
         font-size: 120%;
         margin-right: 0;
-    }
-
-    div.container-fluid div {
-        /*text-align: center;*/
     }
 
     header .hamburguesa {
@@ -222,5 +320,12 @@ header .hamburguesa{
         height: 450px;
     }
 
+    main section .flex article{
+        width: 100%;
+        border-left: 0;
+        border-bottom: 1px solid #444;
+        padding-bottom: 20px;
+           
+    }
 
 }
