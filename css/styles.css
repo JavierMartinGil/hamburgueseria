@@ -99,6 +99,58 @@ header .hamburguesa{
     display: none;
 }
 
+/* fin de header */
+
+
+/* hero */
+
+.hero {
+    background-image: url('../images/fondo.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+    background-color: #444;
+    background-blend-mode: soft-light;
+}
+
+.hero > div{
+    padding: 10% 10%;
+    color: white;
+}
+
+.hero > div h1{
+    font-size: 2em;
+    font-family: 'Handlee', cursive; 
+}
+
+.hero > div h2{
+    color: #fa573a;
+    font-size: 1.25em;
+    margin: .8em 0;
+}
+
+.hero .boton{
+    background-color: #fa573a;
+    border: 2px solid #fa573a;
+    padding: .9em;
+    display: inline-block;
+    margin: 0.8em 0;
+}
+
+.hero .boton:hover{
+    background-color: transparent;
+    color: #fa573a;    
+}
+
+.hero .social {
+    display: flex;
+}
+
+.hero .social li{
+    margin-right: 15px;
+    font-size: 1.5em; 
+}
+
 
 /******* media queries ******/
 
@@ -130,7 +182,7 @@ header .hamburguesa{
     }
 
     div.container-fluid div {
-        text-align: center;
+        /*text-align: center;*/
     }
 
     header .hamburguesa {
@@ -164,6 +216,10 @@ header .hamburguesa{
 
     header nav .menu li:last-child{
         border-bottom: 0;
+    }
+
+    .hero {
+        height: 450px;
     }
 
 
